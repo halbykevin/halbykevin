@@ -122,7 +122,11 @@ footer {
   margin-left: 5px;
   margin-right: 5px;
   border: none;
-  background-color: rgb(15, 112, 183); /* Same color as the navbar links for consistency */
+  background-color: rgb(
+    15,
+    112,
+    183
+  ); /* Same color as the navbar links for consistency */
   color: white;
   cursor: pointer;
   border-radius: none; /* Round the right side of the button */
@@ -428,50 +432,50 @@ textarea {
 }
 
 #about-section {
-    padding: 40px;
-    background-color: #f4f4f4;
+  padding: 40px;
+  background-color: #f4f4f4;
 }
 
 #about-section h1 {
-    color: #333;
-    font-size: 36px;
-    margin-bottom: 20px;
+  color: #333;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
 #about-section img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
 #about-section p {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.6;
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
 }
 
 /* Styles for smaller devices */
 @media (max-width: 768px) {
-    #about-section {
-        padding: 20px;
-    }
+  #about-section {
+    padding: 20px;
+  }
 
-    #about-section h1 {
-        font-size: 28px;
-        text-align: center;
-    }
+  #about-section h1 {
+    font-size: 28px;
+    text-align: center;
+  }
 
-    #about-section p {
-        font-size: 16px;
-    }
+  #about-section p {
+    font-size: 16px;
+  }
 
-    #about-section img {
-        width: 100%;
-    }
+  #about-section img {
+    width: 100%;
+  }
 
-    .container {
-        padding: 0;
-    }
+  .container {
+    padding: 0;
+  }
 }
 
 .new-img {
@@ -500,29 +504,29 @@ textarea {
 }
 
 .fa {
-    padding: 20px;
-    font-size: 15px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
+  padding: 20px;
+  font-size: 15px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
-    color: white;
+  color: white;
 }
 
 .fa-whatsapp {
-    color: white;
+  color: white;
 }
 
 .fa-instagram {
-    color: white;
+  color: white;
 }
 
 .dropdown-content {
@@ -534,7 +538,6 @@ textarea {
   display: block;
   /* Add your styles for the open state */
 }
-
 
 .loading-screen {
   position: fixed;
@@ -551,7 +554,7 @@ textarea {
 .jimu-primary-loading:after {
   position: absolute;
   top: 0;
-  content: '';
+  content: "";
 }
 
 .jimu-primary-loading:before {
@@ -585,11 +588,10 @@ textarea {
 }
 
 @-webkit-keyframes loading-keys-app-loading {
-
   0%,
   80%,
   100% {
-    opacity: .75;
+    opacity: 0.75;
     box-shadow: 0 0 #076fe5;
     height: 32px;
   }
@@ -602,11 +604,10 @@ textarea {
 }
 
 @keyframes loading-keys-app-loading {
-
   0%,
   80%,
   100% {
-    opacity: .75;
+    opacity: 0.75;
     box-shadow: 0 0 #076fe5;
     height: 32px;
   }
@@ -616,4 +617,21 @@ textarea {
     box-shadow: 0 -8px #076fe5;
     height: 40px;
   }
+}
+
+/* Add these styles to your CSS */
+.old-price {
+  text-decoration: line-through;
+  color: red;
+  display: inline-block; /* Updated this property */
+}
+
+.new-price {
+  color: green;
+  display: inline-block; /* Updated this property */
+}
+
+/* Newly added class to add a space between old and new price */
+.price p {
+  margin-right: 10px;
 }
