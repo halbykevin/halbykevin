@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Boutique Samir</title>
+  </head>
+  <body>
+    <p class="delevery-text">
+      HOME DELEVERY EXCHANGE SERVICE IS AVAILABLE<br />
+      CONTACT US ON 81 124154
+    </p>
+    <header>
+      <img src="image/logo/samirR-1.png" class="header-logo" />
+    </header>
+
+    <nav>
+      <span onclick="openNav()" class="open-sidenav-btn">☰</span>
+      
+    <a href="index.html">Home</a>
+    <a href="kids.html">Kids</a>
+    <a href="outlet.html" class="outlet-button">Outlet</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">Home</a>
+      <a href="new.html">New</a>
+      <a href="kids.html">Outlet</a>
+
+      <a href="boys.html"
+        >Boys<span
+          class="dropdown-icon"
+          onclick="toggleDropdown('boysDropdown', event)"
+        >
+          >
+        </span></a
+      >
+      <div id="boysDropdown" class="dropdown-content">
+        <a href="t-shirtBoys.html">T-shirt</a>
+        <a href="pantsBoys.html">Pants</a>
+        <a href="jacketsBoys.html">Jackets</a>
+        <a href="longSleeveBoys.html">Long Sleeve</a>
+        <a href="hoodiesBoys.html">Hoodies</a>
+        <a href="bodysBoys.html">Body</a>
+        <a href="shortsBoys.html">Shorts</a>
+        <a href="bootsBoys.html">Boots</a>
+        <a href="pyjamaBoys.html">Pyjama</a>
+        <a href="setsBoys.html">Sets</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <a href="girls.html"
+        >Girls<span
+          class="dropdown-icon"
+          onclick="toggleDropdown('girlsDropdown', event)"
+        >
+          >
+        </span></a
+      >
+      <div id="girlsDropdown" class="dropdown-content">
+        <a href="t-shirtGirls.html">T-shirt</a>
+        <a href="pantsGirls.html">Pants</a>
+        <a href="jacketsGirls.html">Jackets</a>
+        <a href="longSleeveGirls.html">Long Sleeve</a>
+        <a href="hoodiesGirls.html">Hoodies</a>
+        <a href="bodysGirls.html">Body</a>
+        <a href="dress.html">Dress</a>
+        <a href="shortsGirls.html">Shorts</a>
+        <a href="bootsGirls.html">Boots</a>
+        <a href="pyjamaGirls.html">Pyjama</a>
+        <a href="setsGirls.html">Sets</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="search-container">
+      <input
+        type="text"
+        placeholder="Search for a product or content..."
+        class="search-bar"
+      />
+      <button type="submit" class="search-btn">Search</button>
+      <div class="search-container"></div>
+    </div>
+
+    <div class="products">
+      <div class="product" data-category="boots" data-brand="Colmar" onclick="openModal('modal32')">
+        <img src="image/Brands/Colmar/1.jpg" alt="Colmar boots" />
+        <h3>Colmar</h3>
+        <p>Boots</p>
+        <p>$90-95$</p>
+      </div>
+      <div id="modal32" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal32')">&times;</span>
+          <img class="modal-img" src="image/Brands/Colmar/1.jpg" alt="Colmar boots" />
+          <h3 class="modal-title">Colmar</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$90-95$</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">36</option>
+            <option value="6Y">37</option>
+            <option value="6Y">38</option>
+            <option value="6Y">39</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Zippy" onclick="openModal('modal35')">
+        <img src="image/Brands/Zippy/3 (2).jpg" alt="Zippy boots" />
+        <h3>Zippy</h3>
+        <p>Boots</p>
+        <p>$37</p>
+      </div>
+      <div id="modal35" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal35')">&times;</span>
+          <img class="modal-img" src="image/Brands/Zippy/3.jpg" alt="Zippy boots" />
+          <h3 class="modal-title">Zippy</h3>
+          <p class="modal-text">Zippy</p>
+          <p class="modal-price">$37</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">27</option>
+            <option value="6Y">29</option>
+            <option value="6Y">31</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Ikks" onclick="openModal('modal1')">
+        <img src="image/Brands/Ikks/Ikks/boots1.jpg" alt="Ikks boots" />
+        <h3>Ikks</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/boots1.jpg" alt="Ikks boots" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal6')">
+        <img src="image/Brands/Babybotte/boots2.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal6')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots2.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Zippy" onclick="openModal('modal37')">
+        <img src="image/Brands/Zippy/5.jpg" alt="Zippy boots" />
+        <h3>Zippy</h3>
+        <p>Boots</p>
+        <p>$51</p>
+      </div>
+      <div id="modal37" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal37')">&times;</span>
+          <img class="modal-img" src="image/Brands/Zippy/5 (2).jpg" alt="Zippy boots" />
+          <h3 class="modal-title">Zippy</h3>
+          <p class="modal-text">Zippy</p>
+          <p class="modal-price">$51</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">25</option>
+            <option value="6Y">26</option>
+            <option value="6Y">27</option>
+            <option value="4Y">28</option>
+            <option value="6Y">29</option>
+            <option value="6Y">30</option>
+            <option value="4Y">31</option>
+            <option value="6Y">32</option>
+            <option value="6Y">33</option>
+            <option value="4Y">34</option>
+            <option value="6Y">35</option>
+            <option value="6Y">36</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Colmar" onclick="openModal('modal33')">
+        <img src="image/Brands/Colmar/2 (2) size.jpg" alt="Colmar boots" />
+        <h3>Colmar</h3>
+        <p>Boots</p>
+        <p>$98-102$</p>
+      </div>
+      <div id="modal33" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal33')">&times;</span>
+          <img class="modal-img" src="image/Brands/Colmar/2 (2) size.jpg" alt="Colmar boots" />
+          <h3 class="modal-title">Colmar</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$98-102$</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">36</option>
+            <option value="6Y">37</option>
+            <option value="6Y">38</option>
+            <option value="6Y">39</option>
+            <option value="6Y">40</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Ikks" onclick="openModal('modal2')">
+          <img src="image/Brands/Ikks/Ikks/boots2.jpg" alt="Ikks boots" />
+          <h3>Ikks</h3>
+          <p>Boots</p>
+          <p>$199.99</p>
+      </div>
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/boots2.jpg" alt="Ikks boots" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal7')">
+        <img src="image/Brands/Babybotte/boots3.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal7')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots3.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Zippy" onclick="openModal('modal38')">
+        <img src="image/Brands/Zippy/7 (2).jpg" alt="Zippy boots" />
+        <h3>Zippy</h3>
+        <p>Boots</p>
+        <p>$47</p>
+      </div>
+      <div id="modal38" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal38')">&times;</span>
+          <img class="modal-img" src="image/Brands/Zippy/7 (4).jpg" alt="Zippy boots" />
+          <h3 class="modal-title">Zippy</h3>
+          <p class="modal-text">Zippy</p>
+          <p class="modal-price">$47</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">19</option>
+            <option value="6Y">20</option>
+            <option value="6Y">21</option>
+            <option value="4Y">22</option>
+            <option value="6Y">23</option>
+            <option value="6Y">24</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Ikks" onclick="openModal('modal3')">
+          <img src="image/Brands/Ikks/Ikks/boots3.jpg" alt="Ikks boots" />
+          <h3>Ikks</h3>
+          <p>Boots</p>
+          <p>$199.99</p>
+      </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/boots3.jpg" alt="Ikks boots" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Colmar" onclick="openModal('modal34')">
+        <img src="image/Brands/Colmar/3 (2).jpg" alt="Colmar boots" />
+        <h3>Colmar</h3>
+        <p>Boots</p>
+        <p>$106-$111</p>
+      </div>
+      <div id="modal34" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal34')">&times;</span>
+          <img class="modal-img" src="image/Brands/Colmar/3 (2).jpg" alt="Colmar boots" />
+          <h3 class="modal-title">Colmar</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$106-$111</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">36</option>
+            <option value="6Y">37</option>
+            <option value="6Y">38</option>
+            <option value="6Y">39</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal8')">
+        <img src="image/Brands/Babybotte/boots4.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal8')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots4.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Ikks" onclick="openModal('modal4')">
+          <img src="image/Brands/Ikks/Ikks/boots4.jpg" alt="Ikks boots" />
+          <h3>Ikks</h3>
+          <p>Boots</p>
+          <p>$199.99</p>
+      </div>
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal4')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/boots4.jpg" alt="Ikks boots" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Zippy" onclick="openModal('modal39')">
+        <img src="image/Brands/Zippy/8 (2).jpg" alt="Zippy boots" />
+        <h3>Zippy</h3>
+        <p>Boots</p>
+        <p>$36</p>
+      </div>
+      <div id="modal39" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal39')">&times;</span>
+          <img class="modal-img" src="image/Brands/Zippy/8 (4).jpg" alt="Zippy boots" />
+          <h3 class="modal-title">Zippy</h3>
+          <p class="modal-text">Zippy</p>
+          <p class="modal-price">$36</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">25</option>
+            <option value="6Y">26</option>
+            <option value="6Y">27</option>
+            <option value="4Y">28</option>
+            <option value="6Y">29</option>
+            <option value="6Y">30</option>
+            <option value="4Y">31</option>
+            <option value="6Y">32</option>
+            <option value="6Y">33</option>
+            <option value="4Y">34</option>
+            <option value="6Y">35</option>
+            <option value="6Y">36</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal9')">
+        <img src="image/Brands/Babybotte/boots5.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal9')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots5.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Colmar" onclick="openModal('modal36')">
+        <img src="image/Brands/Colmar/4 (3).jpg" alt="Colmar boots" />
+        <h3>Colmar</h3>
+        <p>Boots</p>
+        <p>$100-$102</p>
+      </div>
+      <div id="modal36" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal36')">&times;</span>
+          <img class="modal-img" src="image/Brands/Colmar/4 (3).jpg" alt="Colmar boots" />
+          <h3 class="modal-title">Colmar</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$100-$102</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">30</option>
+            <option value="6Y">31</option>
+            <option value="6Y">32</option>
+            <option value="6Y">33</option>
+            <option value="6Y">34</option>
+            <option value="6Y">35</option>
+            <option value="4Y">36</option>
+            <option value="6Y">37</option>
+            <option value="6Y">38</option>
+            <option value="6Y">39</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal5')">
+        <img src="image/Brands/Babybotte/boots1.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal5')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots1.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal10')">
+        <img src="image/Brands/Babybotte/boots6.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal10" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal10')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots6.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal11')">
+        <img src="image/Brands/Babybotte/boots7.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal11" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal11')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots7.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal12')">
+        <img src="image/Brands/Babybotte/boots8.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal12" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal12')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots8.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal13')">
+        <img src="image/Brands/Babybotte/boots9.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal13" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal13')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots9.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal14')">
+        <img src="image/Brands/Babybotte/boots10.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal14" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal14')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots10.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal15')">
+        <img src="image/Brands/Babybotte/boots11.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal15" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal15')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots11.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal16')">
+        <img src="image/Brands/Babybotte/boots12.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal16" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal16')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots12.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal17')">
+        <img src="image/Brands/Babybotte/boots13.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal17" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal17')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots13.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal18')">
+        <img src="image/Brands/Babybotte/boots14.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal18" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal18')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots14.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal19')">
+        <img src="image/Brands/Babybotte/boots15.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal19" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal19')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots15.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal20')">
+        <img src="image/Brands/Babybotte/boots16.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal20" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal11')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots16.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal21')">
+        <img src="image/Brands/Babybotte/boots17.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal21" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal21')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots17.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal22')">
+        <img src="image/Brands/Babybotte/boots18.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal22" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal22')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots18.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal23')">
+        <img src="image/Brands/Babybotte/boots19.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal23" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal23')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots19.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal24')">
+        <img src="image/Brands/Babybotte/boots20.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal24" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal24')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots20.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal25')">
+        <img src="image/Brands/Babybotte/boots21.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal25" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal25')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots21.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal26')">
+        <img src="image/Brands/Babybotte/boots22.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal26" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal26')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots22.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal27')">
+        <img src="image/Brands/Babybotte/boots23.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal27" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal27')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots23.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal28')">
+        <img src="image/Brands/Babybotte/boots24.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal28" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal28')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots24.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal29')">
+        <img src="image/Brands/Babybotte/boots25.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal29" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal29')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots25.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal30')">
+        <img src="image/Brands/Babybotte/boots26.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal30" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal30')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots26.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="boots" data-brand="Baby Botte" onclick="openModal('modal31')">
+        <img src="image/Brands/Babybotte/boots27.jpg" alt="Baby Botte boots" />
+        <h3>Baby Botte</h3>
+        <p>Boots</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal31" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal31')">&times;</span>
+          <img class="modal-img" src="image/Brands/Babybotte/boots27.jpg" alt="Baby Botte boots" />
+          <h3 class="modal-title">Baby Botte</h3>
+          <p class="modal-text">Boots</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+      <!-- Repeat .product div for each product -->
+    </div>
+
+    <footer>
+      <a href="https://www.facebook.com/people/Boutique-Samir/100062805141412/" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://wa.me/message/2CJRMXW4RN47K1" class="fa fa-whatsapp" target="_blank"></a>
+      <a href="https://www.instagram.com/boutiquesamir/" class="fa fa-instagram" target="_blank"></a><br />
+      Copyright &copy; 2023 Boutique Samir
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+  <div id="loadingScreen" class="loading-screen">
+      <div class="loader">
+      <div class="justify-content-center jimu-primary-loading"></div>
+    </div>
+    </div>
+    <script type="text/javascript">
+window.onload = function() {
+  document.getElementById("loadingScreen").style.display = "none";
+};
+</script>
+</html>

@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Boutique Samir</title>
+  </head>
+  <body>
+    <p class="delevery-text">
+      HOME DELEVERY EXCHANGE SERVICE IS AVAILABLE<br />
+      CONTACT US ON 81 124154
+    </p>
+    <header>
+      <img src="image/logo/samirR-1.png" class="header-logo" />
+    </header>
+
+    <nav>
+      <span onclick="openNav()" class="open-sidenav-btn">☰</span>
+      
+    <a href="index.html">Home</a>
+    <a href="kids.html">Kids</a>
+    <a href="outlet.html" class="outlet-button">Outlet</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">Home</a>
+      <a href="new.html">New</a>
+      <a href="kids.html">Outlet</a>
+
+      <a href="boys.html"
+        >Boys<span
+          class="dropdown-icon"
+          onclick="toggleDropdown('boysDropdown', event)"
+        >
+          >
+        </span></a
+      >
+      <div id="boysDropdown" class="dropdown-content">
+        <a href="t-shirtBoys.html">T-shirt</a>
+        <a href="pantsBoys.html">Pants</a>
+        <a href="jacketsBoys.html">Jackets</a>
+        <a href="longSleeveBoys.html">Long Sleeve</a>
+        <a href="hoodiesBoys.html">Hoodies</a>
+        <a href="bodysBoys.html">Body</a>
+        <a href="shortsBoys.html">Shorts</a>
+        <a href="bootsBoys.html">Boots</a>
+        <a href="pyjamaBoys.html">Pyjama</a>
+        <a href="setsBoys.html">Sets</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <a href="girls.html"
+        >Girls<span
+          class="dropdown-icon"
+          onclick="toggleDropdown('girlsDropdown', event)"
+        >
+          >
+        </span></a
+      >
+      <div id="girlsDropdown" class="dropdown-content">
+        <a href="t-shirtGirls.html">T-shirt</a>
+        <a href="pantsGirls.html">Pants</a>
+        <a href="jacketsGirls.html">Jackets</a>
+        <a href="longSleeveGirls.html">Long Sleeve</a>
+        <a href="hoodiesGirls.html">Hoodies</a>
+        <a href="bodysGirls.html">Body</a>
+        <a href="dress.html">Dress</a>
+        <a href="shortsGirls.html">Shorts</a>
+        <a href="bootsGirls.html">Boots</a>
+        <a href="pyjamaGirls.html">Pyjama</a>
+        <a href="setsGirls.html">Sets</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="search-container">
+      <input
+        type="text"
+        placeholder="Search for a product or content..."
+        class="search-bar"
+      />
+      <button type="submit" class="search-btn">Search</button>
+      <div class="search-container"></div>
+    </div>
+
+    <div class="products">
+      <div class="product" data-category="long-Sleeve" data-brand="Ducati" onclick="openModal('modal1')">
+        <img
+          src="image/Brands/Dugati/longSleeve1.jpg"
+          alt="Ducati long-Sleeve"
+        />
+        <h3>Ducati</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <img class="modal-img" src="image/Brands/Dugati/longSleeve1.jpg" alt="Ducati long sleeve" />
+          <h3 class="modal-title">Ducati</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">3Y</option>
+            <option value="6Y">4Y</option>
+            <option value="6Y">5Y</option>
+            <option value="6Y">6Y</option>
+            <option value="6Y">7Y</option>
+            <option value="6Y">S</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal15')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve1.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal15" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal15')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve1.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Sarabadna" onclick="openModal('modal6')">
+        <img
+          src="image/Brands/Sarabanda/longSleeve1.jpg"
+          alt="Sarabanda long-Sleeve"
+        />
+        <h3>Sarabanda</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal6')">&times;</span>
+          <img class="modal-img" src="image/Brands/Sarabanda/longSleeve1.jpg" alt="Sarabanda long sleeve" />
+          <h3 class="modal-title">Sarabanda</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal16')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve2.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal16" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal16')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve2.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ido" onclick="openModal('modal7')">
+        <img src="image/Brands/Ido/longSleeve1.jpg" alt="Ido long-Sleeve" />
+        <h3>Ido</h3>
+        <p>long-Sleeve</p>
+        <p>$15</p>
+      </div>
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal7')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/longSleeve1.jpg" alt="Ido long sleeve" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$15</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">24M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ducati" onclick="openModal('modal2')">
+        <img
+          src="image/Brands/Dugati/longSleeve2.jpg"
+          alt="Ducati long-Sleeve"
+        />
+        <h3>Ducati</h3>
+        <p>long-Sleeve</p>
+        <p>$99.99</p>
+      </div>
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <img class="modal-img" src="image/Brands/Dugati/longSleeve2.jpg" alt="Ducati long sleeve" />
+          <h3 class="modal-title">Ducati</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">3Y</option>
+            <option value="6Y">4Y</option>
+            <option value="6Y">5Y</option>
+            <option value="6Y">6Y</option>
+            <option value="6Y">7Y</option>
+            <option value="6Y">S</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ido" onclick="openModal('modal8')">
+        <img src="image/Brands/Ido/longSleeve2.jpg" alt="Ido long-Sleeve" />
+        <h3>Ido</h3>
+        <p>long-Sleeve</p>
+        <p>$15</p>
+      </div>
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal8')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/longSleeve2.jpg" alt="Ido long sleeve" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$15</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">6M</option>
+            <option value="4Y">9M</option>
+            <option value="6Y">12M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal17')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve3.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal17" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal17')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve3.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ducati" onclick="openModal('modal3')">
+        <img
+          src="image/Brands/Dugati/longSleeve3.jpg"
+          alt="Ducati long-Sleeve"
+        />
+        <h3>Ducati</h3>
+        <p>long-Sleeve</p>
+        <p>$99.99</p>
+      </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <img class="modal-img" src="image/Brands/Dugati/longSleeve3.jpg" alt="Ducati long sleeve" />
+          <h3 class="modal-title">Ducati</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">3Y</option>
+            <option value="6Y">4Y</option>
+            <option value="6Y">5Y</option>
+            <option value="6Y">6Y</option>
+            <option value="6Y">7Y</option>
+            <option value="6Y">S</option>
+          </select>
+        </div>
+      </div>
+
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ido" onclick="openModal('modal9')">
+        <img src="image/Brands/Ido/longSleeve3.jpg" alt="Ido long-Sleeve" />
+        <h3>Ido</h3>
+        <p>long-Sleeve</p>
+        <p>$15</p>
+      </div>
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal9')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/longSleeve3.jpg" alt="Ido long sleeve" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$15</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">6M</option>
+            <option value="4Y">9M</option>
+            <option value="6Y">12M</option>
+            <option value="6Y">18M</option>
+            <option value="4Y">24M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal45')">
+        <img
+          src="image/Brands/Absorba/longSleeve6.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$50</p>
+      </div>
+      <div id="modal45" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal45')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve6.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$50</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">12M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal18')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve4.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal18" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal18')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve4.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ido" onclick="openModal('modal10')">
+        <img src="image/Brands/Ido/longSleeve9.jpg" alt="Ido long-Sleeve" />
+        <h3>Ido</h3>
+        <p>long-Sleeve</p>
+        <p>$22</p>
+      </div>
+      <div id="modal10" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal10')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/longSleeve9.jpg" alt="Ido long sleeve" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$22</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">S</option>
+            <option value="6Y">M</option>
+            <option value="4Y">L</option>
+            <option value="6Y">XL</option>
+            <option value="6Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ducati" onclick="openModal('modal4')">
+        <img
+          src="image/Brands/Dugati/longSleeve4.jpg"
+          alt="Ducati long-Sleeve"
+        />
+        <h3>Ducati</h3>
+        <p>long-Sleeve</p>
+        <p>$99.99</p>
+      </div>
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal4')">&times;</span>
+          <img class="modal-img" src="image/Brands/Dugati/longSleeve4.jpg" alt="Ducati long sleeve" />
+          <h3 class="modal-title">Ducati</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">3Y</option>
+            <option value="4Y">S</option>
+            <option value="4Y">M</option>
+            <option value="4Y">L</option>
+            <option value="4Y">XL</option>
+            <option value="4Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal46')">
+        <img
+          src="image/Brands/Absorba/longSleeve7.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$28</p>
+      </div>
+      <div id="modal46" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal46')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve7.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$28</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">18M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal19')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve5.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal19" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal19')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve5.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ducati" onclick="openModal('modal5')">
+        <img
+          src="image/Brands/Dugati/longSleeve5.jpg"
+          alt="Ducati long-Sleeve"
+        />
+        <h3>Ducati</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal5')">&times;</span>
+          <img class="modal-img" src="image/Brands/Dugati/longSleeve5.jpg" alt="Ducati long sleeve" />
+          <h3 class="modal-title">Ducati</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">3Y</option>
+            <option value="4Y">S</option>
+            <option value="4Y">M</option>
+            <option value="4Y">L</option>
+            <option value="4Y">XL</option>
+            <option value="4Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal20')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve6.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal20" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal20')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve6.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal47')">
+        <img
+          src="image/Brands/Absorba/longSleeve8.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$39</p>
+      </div>
+      <div id="modal47" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal47')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve8.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$39</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">6M</option>
+            <option value="6Y">9M</option>
+            <option value="4Y">12M</option>
+            <option value="4Y">24M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal21')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve7.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal21" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal21')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve7.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ido" onclick="openModal('modal13')">
+        <img src="image/Brands/Ido/longSleeve7.jpg" alt="Ido long-Sleeve" />
+        <h3>Ido</h3>
+        <p>long-Sleeve</p>
+        <p>$22</p>
+      </div>
+      <div id="modal13" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal13')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/longSleeve7.jpg" alt="Ido long sleeve" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$22</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">S</option>
+            <option value="4Y">L</option>
+            <option value="6Y">XL</option>
+            <option value="4Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal22')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve8.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal22" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal22')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve8.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal43')">
+        <img
+          src="image/Brands/Absorba/longSleeve3.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal43" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal43')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve3.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal48')">
+        <img
+          src="image/Brands/Absorba/longSleeve9.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$17</p>
+      </div>
+      <div id="modal48" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal48')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve9.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$17</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">12M</option>
+            <option value="6Y">36M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ido" onclick="openModal('modal14')">
+        <img src="image/Brands/Ido/longSleeve8.jpg" alt="Ido long-Sleeve" />
+        <h3>Ido</h3>
+        <p>long-Sleeve</p>
+        <p>$22</p>
+      </div>
+      <div id="modal14" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal14')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/longSleeve8.jpg" alt="Ido long sleeve" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$22</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">S</option>
+            <option value="6Y">M</option>
+            <option value="4Y">L</option>
+            <option value="6Y">XL</option>
+            <option value="4Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal23')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve9.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal23" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal23')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve9.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal24')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve10.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal24" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal24')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve10.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal25')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve11.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal25" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal25')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve11.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal26')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve12.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal26" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal26')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve12.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal49')">
+        <img
+          src="image/Brands/Absorba/longSleeve10.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$33</p>
+      </div>
+      <div id="modal49" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal49')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve10.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$33</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">6M</option>
+            <option value="6Y">9M</option>
+            <option value="4Y">12M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal27')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve13.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal27" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal27')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve13.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal28')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve14.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal28" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal28')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve14.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal29')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve15.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal29" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal29')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve15.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal30')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve16.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal30" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal30')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve16.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal50')">
+        <img
+          src="image/Brands/Absorba/longSleeve11.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$17</p>
+      </div>
+      <div id="modal50" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal50')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve11.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$17</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">9M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal31')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve17.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal31" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal31')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve17.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal32')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve18.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal32" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal32')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve18.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal42')">
+        <img
+          src="image/Brands/Absorba/longSleeve2.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal42" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal42')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve2.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal33')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve19.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal33" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal32')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve19.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal34')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve20.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal34" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal34')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve20.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal35')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve21.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal35" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal34')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve21.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal51')">
+        <img
+          src="image/Brands/Absorba/longSleeve12.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$22</p>
+      </div>
+      <div id="modal51" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal51')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve12.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$22</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">6M</option>
+            <option value="6Y">18M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal36')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve22.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal36" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal36')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve22.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal37')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve23.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal37" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal37')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve23.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal38')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve24.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal38" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal38')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve24.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal39')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve25.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal39" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal39')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve25.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal40')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve26.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal40" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal40')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve26.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal52')">
+        <img
+          src="image/Brands/Absorba/longSleeve13.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal52" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal52')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve13.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Ikks" onclick="openModal('modal41')">
+        <img
+          src="image/Brands/Ikks/Ikks/longSleeve27.jpg"
+          alt="Ikks long-Sleeve"
+        />
+        <h3>Ikks</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal41" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal41')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/longSleeve27.jpg" alt="Ikks long sleeve" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="long-Sleeve" data-brand="Absorba" onclick="openModal('modal44')">
+        <img
+          src="image/Brands/Absorba/longSleeve1.jpg"
+          alt="Absorba long-Sleeve"
+        />
+        <h3>Absorba</h3>
+        <p>long-Sleeve</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal44" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal44')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/longSleeve1.jpg" alt="Absorba long sleeve" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Long-SLeeve</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Repeat .product div for each product -->
+    </div>
+
+    <footer>
+      <a href="https://www.facebook.com/people/Boutique-Samir/100062805141412/" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://wa.me/message/2CJRMXW4RN47K1" class="fa fa-whatsapp" target="_blank"></a>
+      <a href="https://www.instagram.com/boutiquesamir/" class="fa fa-instagram" target="_blank"></a><br />
+      Copyright &copy; 2023 Boutique Samir
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+    <div id="loadingScreen" class="loading-screen">
+      <div class="loader">
+      <div class="justify-content-center jimu-primary-loading"></div>
+    </div>
+    </div>
+    <script type="text/javascript">
+window.onload = function() {
+  document.getElementById("loadingScreen").style.display = "none";
+};
+</script>
+  </body>
+</html>

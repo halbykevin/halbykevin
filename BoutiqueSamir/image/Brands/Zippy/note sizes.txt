@@ -1,0 +1,10 @@
+1= sizes 28 to 36 price 56$
+2= sizes 19 to 24 price 51$
+3= sizes 27-29-31 price 37$
+4= sizes 25 to 34 price 36$ 
+5= sizes 25 to 36 price 51$
+6= sizes 19 to 24 price 36$
+7= sizes 19 to 24 price 47$
+8= sizes 25 to 36 price 36$
+9= sizes 25 to 34 price 51$
+

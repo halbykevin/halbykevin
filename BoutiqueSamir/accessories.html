@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Boutique Samir</title>
+  </head>
+  <body>
+    <p class="delevery-text">
+      HOME DELEVERY EXCHANGE SERVICE IS AVAILABLE<br />
+      CONTACT US ON 81 124154
+    </p>
+    <header>
+      <img src="image/logo/samirR-1.png" class="header-logo" />
+    </header>
+
+    <nav>
+      <span onclick="openNav()" class="open-sidenav-btn">☰</span>
+      
+    <a href="index.html">Home</a>
+    <a href="kids.html">Kids</a>
+    <a href="outlet.html" class="outlet-button">Outlet</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">Home</a>
+      <a href="new.html">New</a>
+      <a href="kids.html">Outlet</a>
+
+      <a href="boys.html"
+        >Boys<span
+          class="dropdown-icon"
+          onclick="toggleDropdown('boysDropdown', event)"
+        >
+          >
+        </span></a
+      >
+      <div id="boysDropdown" class="dropdown-content">
+        <a href="t-shirtBoys.html">T-shirt</a>
+        <a href="pantsBoys.html">Pants</a>
+        <a href="jacketsBoys.html">Jackets</a>
+        <a href="longSleeveBoys.html">Long Sleeve</a>
+        <a href="hoodiesBoys.html">Hoodies</a>
+        <a href="bodysBoys.html">Body</a>
+        <a href="shortsBoys.html">Shorts</a>
+        <a href="bootsBoys.html">Boots</a>
+        <a href="pyjamaBoys.html">Pyjama</a>
+        <a href="setsBoys.html">Sets</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <a href="girls.html"
+        >Girls<span
+          class="dropdown-icon"
+          onclick="toggleDropdown('girlsDropdown', event)"
+        >
+          >
+        </span></a
+      >
+      <div id="girlsDropdown" class="dropdown-content">
+        <a href="t-shirtGirls.html">T-shirt</a>
+        <a href="pantsGirls.html">Pants</a>
+        <a href="jacketsGirls.html">Jackets</a>
+        <a href="longSleeveGirls.html">Long Sleeve</a>
+        <a href="hoodiesGirls.html">Hoodies</a>
+        <a href="bodysGirls.html">Body</a>
+        <a href="dress.html">Dress</a>
+        <a href="shortsGirls.html">Shorts</a>
+        <a href="bootsGirls.html">Boots</a>
+        <a href="pyjamaGirls.html">Pyjama</a>
+        <a href="setsGirls.html">Sets</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="search-container">
+      <input
+        type="text"
+        placeholder="Search for a product or content..."
+        class="search-bar"
+      />
+      <button type="submit" class="search-btn">Search</button>
+      <div class="search-container"></div>
+    </div>
+
+    <div class="products">
+      <div class="product" data-category="Toy" data-brand="Absorba" onclick="openModal('modal1')">
+        <img src="image/Brands/Absorba/accessory1.jpg" alt="Absroba Toy" />
+        <h3>Absorba</h3>
+        <p>Toy</p>
+        <p>$50</p>
+      </div>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/accessory1.jpg" alt="Absorba Toy" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Toy</p>
+          <p class="modal-price">$50</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal16')">
+        <img src="image/Brands/Absorba/socks2.jpg" alt="Absroba socks" />
+        <h3>Absorba</h3>
+        <p>Socks</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal16" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal16')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/socks2.jpg" alt="Absorba socks" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Socks</p>
+          <p class="modal-price">$199.99</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal11')">
+        <img src="image/Brands/Absorba/hat3.jpg" alt="Absroba hat" />
+        <h3>Absorba</h3>
+        <p>HAt</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal11" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal11')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/hat3.jpg" alt="Absorba hat" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Hat</p>
+          <p class="modal-price">$199.99</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="Bavette" data-brand="Absorba" onclick="openModal('modal2')">
+        <img src="image/Brands/Absorba/accessory2.jpg" alt="Absroba Bavette" />
+        <h3>Absorba</h3>
+        <p>Bavette</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/accessory2.jpg" alt="Absorba Bavette" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Bavette</p>
+          <p class="modal-price">$199.99</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal17')">
+        <img src="image/Brands/Absorba/socks3.jpg" alt="Absroba socks" />
+        <h3>Absorba</h3>
+        <p>Socks</p>
+        <p>$12</p>
+      </div>
+      <div id="modal17" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal17')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/socks3.jpg" alt="Absorba socks" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Socks</p>
+          <p class="modal-price">$12</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">15M</option>
+            <option value="4Y">18M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal10')">
+        <img src="image/Brands/Absorba/hat2.jpg" alt="Absroba hat" />
+        <h3>Absorba</h3>
+        <p>HAt</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal10" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal10')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/hat2.jpg" alt="Absorba hat" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Hat</p>
+          <p class="modal-price">$199.99</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="Bavette" data-brand="Absorba" onclick="openModal('modal3')">
+        <img src="image/Brands/Absorba/accessory3.jpg" alt="Absroba Bavette" />
+        <h3>Absorba</h3>
+        <p>Bavette</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/accessory3.jpg" alt="Absorba Bavette" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Bavette</p>
+          <p class="modal-price">$199.99</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal12')">
+        <img src="image/Brands/Absorba/hat4.jpg" alt="Absroba hat" />
+        <h3>Absorba</h3>
+        <p>HAt</p>
+        <p>$17</p>
+      </div>
+      <div id="modal12" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal12')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/hat4.jpg" alt="Absorba hat" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Hat</p>
+          <p class="modal-price">$17</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">6</option>
+            <option value="4Y">12</option>
+            <option value="4Y">18</option>
+            <option value="4Y">36</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal18')">
+        <img src="image/Brands/Absorba/socks4.jpg" alt="Absroba socks" />
+        <h3>Absorba</h3>
+        <p>Socks</p>
+        <p>$12</p>
+      </div>
+      <div id="modal18" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal18')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/socks4.jpg" alt="Absorba socks" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Socks</p>
+          <p class="modal-price">$12</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">15</option>
+            <option value="4Y">18</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Bavette" data-brand="Absorba" onclick="openModal('modal4')">
+        <img src="image/Brands/Absorba/accessory4.jpg" alt="Absroba Bavette" />
+        <h3>Absorba</h3>
+        <p>Bavette</p>
+        <p>$34</p>
+      </div>
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal4')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/accessory4.jpg" alt="Absorba Bavette" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Bavette</p>
+          <p class="modal-price">$34</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="Bavette" data-brand="Absorba" onclick="openModal('modal5')">
+        <img src="image/Brands/Absorba/accessory7.jpg" alt="Absroba Bavette" />
+        <h3>Absorba</h3>
+        <p>Bavette</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal5')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/accessory7.jpg" alt="Absorba Bavette" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Bavette</p>
+          <p class="modal-price">$199.99</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal13')">
+        <img src="image/Brands/Absorba/hat1girl.jpg" alt="Absroba hat" />
+        <h3>Absorba</h3>
+        <p>HAt</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal13" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal13')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/hat1girl.jpg" alt="Absorba hat" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Hat</p>
+          <p class="modal-price">$199.99</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal19')">
+        <img src="image/Brands/Absorba/socks5.jpg" alt="Absroba socks" />
+        <h3>Absorba</h3>
+        <p>Socks</p>
+        <p>$12</p>
+      </div>
+      <div id="modal19" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal19')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/socks5.jpg" alt="Absorba socks" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Socks</p>
+          <p class="modal-price">$12</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">15</option>
+            <option value="4Y">18</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Gloves" data-brand="Absorba" onclick="openModal('modal6')">
+        <img src="image/Brands/Absorba/accessory6.jpg" alt="Absroba Bavette" />
+        <h3>Absorba</h3>
+        <p>Gloves</p>
+        <p>$12</p>
+      </div>
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal6')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/accessory6.jpg" alt="Absorba Bavette" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Gloves</p>
+          <p class="modal-price">$12</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="Gloves" data-brand="Absorba" onclick="openModal('modal7')">
+        <img src="image/Brands/Absorba/accessory5.jpg" alt="Absroba gloves" />
+        <h3>Absorba</h3>
+        <p>Gloves</p>
+        <p>$12</p>
+      </div>
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal7')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/accessory5.jpg" alt="Absorba gloves" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Gloves</p>
+          <p class="modal-price">$12</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal20')">
+        <img src="image/Brands/Absorba/socks6.jpg" alt="Absroba socks" />
+        <h3>Absorba</h3>
+        <p>Socks</p>
+        <p>$12</p>
+      </div>
+      <div id="modal20" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal20')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/socks6.jpg" alt="Absorba socks" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Socks</p>
+          <p class="modal-price">$12</p>
+        </div>
+      </div> 
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal14')">
+        <img src="image/Brands/Absorba/hat2girl.jpg" alt="Absroba hat" />
+        <h3>Absorba</h3>
+        <p>HAt</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal14" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal14')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/hat2girl.jpg" alt="Absorba hat" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Hat</p>
+          <p class="modal-price">$199.99</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="Gloves" data-brand="Absorba" onclick="openModal('modal8')">
+        <img src="image/Brands/Absorba/accessory9.jpg" alt="Absroba gloves" />
+        <h3>Absorba</h3>
+        <p>Gloves</p>
+        <p>$12</p>
+      </div>
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal8')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/accessory9.jpg" alt="Absorba gloves" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Gloves</p>
+          <p class="modal-price">$12</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal9')">
+        <img src="image/Brands/Absorba/hat1.jpg" alt="Absroba hat" />
+        <h3>Absorba</h3>
+        <p>HAt</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal9')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/hat1.jpg" alt="Absorba hat" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Hat</p>
+          <p class="modal-price">$199.99</p>
+        </div>
+      </div>
+
+      <div class="product" data-category="hat" data-brand="Absorba" onclick="openModal('modal15')">
+        <img src="image/Brands/Absorba/socks1.jpg" alt="Absroba socks" />
+        <h3>Absorba</h3>
+        <p>Socks</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal15" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal15')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/socks1.jpg" alt="Absorba socks" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Socks</p>
+          <p class="modal-price">$199.99</p>
+        </div>
+      </div>
+      <!-- Repeat .product div for each product -->
+    </div>
+
+    <footer>
+      <a href="https://www.facebook.com/people/Boutique-Samir/100062805141412/" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://wa.me/message/2CJRMXW4RN47K1" class="fa fa-whatsapp" target="_blank"></a>
+      <a href="https://www.instagram.com/boutiquesamir/" class="fa fa-instagram" target="_blank"></a><br />
+      Copyright &copy; 2023 Boutique Samir
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+    <div id="loadingScreen" class="loading-screen">
+      <div class="loader">
+      <div class="justify-content-center jimu-primary-loading"></div>
+    </div>
+    </div>
+    <script type="text/javascript">
+window.onload = function() {
+  document.getElementById("loadingScreen").style.display = "none";
+};
+</script>
+</body>
+</html>

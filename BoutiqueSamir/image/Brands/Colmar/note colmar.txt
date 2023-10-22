@@ -1,0 +1,21 @@
+1= sizes 28 to 35
+price: 90$
+sizes: 36 to 39 
+price:95$
+
+2= sizes 28 to 35 
+price: 98$
+sizes: 36 to 40
+price:102$
+
+
+3=sizes 28 to 35 
+price: 106$
+sizes: 36 to 39
+price:111$ 
+
+sizes 30 to 35 
+price: 100
+sizes: 36 to 39
+price:102$
+

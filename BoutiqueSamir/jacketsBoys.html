@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Boutique Samir</title>
+  </head>
+  <body>
+    <p class="delevery-text">
+      HOME DELEVERY EXCHANGE SERVICE IS AVAILABLE<br />
+      CONTACT US ON 81 124154
+    </p>
+    <header>
+      <img src="image/logo/samirR-1.png" class="header-logo" />
+    </header>
+
+    <nav>
+      <span onclick="openNav()" class="open-sidenav-btn">☰</span>
+      
+    <a href="index.html">Home</a>
+    <a href="kids.html">Kids</a>
+    <a href="outlet.html" class="outlet-button">Outlet</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">Home</a>
+      <a href="new.html">New</a>
+      <a href="kids.html">Outlet</a>
+
+      <a href="boys.html"
+        >Boys<span
+          class="dropdown-icon"
+          onclick="toggleDropdown('boysDropdown', event)"
+        >
+          >
+        </span></a
+      >
+      <div id="boysDropdown" class="dropdown-content">
+        <a href="t-shirtBoys.html">T-shirt</a>
+        <a href="pantsBoys.html">Pants</a>
+        <a href="jacketsBoys.html">Jackets</a>
+        <a href="longSleeveBoys.html">Long Sleeve</a>
+        <a href="hoodiesBoys.html">Hoodies</a>
+        <a href="bodysBoys.html">Body</a>
+        <a href="shortsBoys.html">Shorts</a>
+        <a href="bootsBoys.html">Boots</a>
+        <a href="pyjamaBoys.html">Pyjama</a>
+        <a href="setsBoys.html">Sets</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <a href="girls.html"
+        >Girls<span
+          class="dropdown-icon"
+          onclick="toggleDropdown('girlsDropdown', event)"
+        >
+          >
+        </span></a
+      >
+      <div id="girlsDropdown" class="dropdown-content">
+        <a href="t-shirtGirls.html">T-shirt</a>
+        <a href="pantsGirls.html">Pants</a>
+        <a href="jacketsGirls.html">Jackets</a>
+        <a href="longSleeveGirls.html">Long Sleeve</a>
+        <a href="hoodiesGirls.html">Hoodies</a>
+        <a href="bodysGirls.html">Body</a>
+        <a href="dress.html">Dress</a>
+        <a href="shortsGirls.html">Shorts</a>
+        <a href="bootsGirls.html">Boots</a>
+        <a href="pyjamaGirls.html">Pyjama</a>
+        <a href="setsGirls.html">Sets</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="search-container">
+      <input
+        type="text"
+        placeholder="Search for a product or content..."
+        class="search-bar"
+      />
+      <button type="submit" class="search-btn">Search</button>
+      <div class="search-container"></div>
+    </div>
+
+    <div class="products">
+      <div class="product" data-category="jacket" data-brand="Ducati" onclick="openModal('modal1')">
+        <img src="image/Brands/Dugati/Jacket1.jpg" alt="Ducati Jacket" />
+        <h3>Ducati</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <img class="modal-img" src="image/Brands/Dugati/jacket1.jpg" alt="Ducati jacket" />
+          <h3 class="modal-title">Ducati</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">3Y</option>
+            <option value="6Y">4Y</option>
+            <option value="6Y">5Y</option>
+            <option value="6Y">6Y</option>
+            <option value="6Y">7Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal8')">
+          <img src="image/Brands/Ikks/Ikks/jacket1.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$72</p>
+      </div>
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal8')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket1.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$72</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">12M</option>
+            <option value="4Y">18M</option>
+            <option value="4Y">2Y</option>
+            <option value="4Y">4Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido" onclick="openModal('modal4')">
+        <img src="image/Brands/Ido/gilet4.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal4')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/gilet4.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">3Y</option>
+            <option value="4Y">4Y</option>
+            <option value="4Y">5Y</option>
+            <option value="4Y">6Y</option>
+            <option value="4Y">7Y</option>
+            <option value="4Y">8Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Sarabanda" onclick="openModal('modal15')">
+        <img src="image/Brands/Sarabanda/jacket1.jpg" alt="Sarabanda Jacket" />
+        <h3>Sarabanda</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal15" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal15')">&times;</span>
+          <img class="modal-img" src="image/Brands/Sarabanda/jacket1.jpg" alt="Sarabanda jacket" />
+          <h3 class="modal-title">Sarabanda</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">S</option>
+            <option value="6Y">M</option>
+            <option value="4Y">L</option>
+            <option value="6Y">XL</option>
+            <option value="4Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido" onclick="openModal('modal5')">
+        <img src="image/Brands/Ido/jacket4.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal5')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/jacket4.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">S</option>
+            <option value="6Y">M</option>
+            <option value="4Y">XL</option>
+            <option value="6Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido" onclick="openModal('modal6')">
+        <img src="image/Brands/Ido/jacket1.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal6')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/jacket1.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="4Y">5Y</option>
+            <option value="4Y">6Y</option>
+            <option value="4Y">7Y</option>
+            <option value="4Y">8Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal20')">
+          <img src="image/Brands/Ikks/Ikks/jacket3.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$119-$134</p>
+      </div>
+      <div id="modal20" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal20')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket3.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$119-$134</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">5Y</option>
+            <option value="6Y">6Y</option>
+            <option value="6Y">7Y</option>
+            <option value="6Y">8Y</option>
+            <option value="4Y">9Y</option>
+            <option value="4Y">10Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido" onclick="openModal('modal7')">
+        <img src="image/Brands/Ido/gilet2.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal7')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/gilet2.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">12M</option>
+            <option value="6Y">30M</option>
+            <option value="4Y">3Y</option>
+            <option value="4Y">4Y</option>
+            <option value="4Y">6Y</option>
+            <option value="4Y">7Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Sarabanda" onclick="openModal('modal17')">
+        <img src="image/Brands/Sarabanda/jacket2.jpg" alt="Sarabanda Jacket" />
+        <h3>Sarabanda</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal17" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal17')">&times;</span>
+          <img class="modal-img" src="image/Brands/Sarabanda/jacket2.jpg" alt="Sarabanda jacket" />
+          <h3 class="modal-title">Sarabanda</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">S</option>
+            <option value="6Y">M</option>
+            <option value="4Y">L</option>
+            <option value="6Y">XL</option>
+            <option value="4Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido" onclick="openModal('modal8')">
+        <img src="image/Brands/Ido/jacket5.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal8')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/jacket5.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">S</option>
+            <option value="6Y">M</option>
+            <option value="4Y">L</option>
+            <option value="6Y">XL</option>
+            <option value="6Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido" onclick="openModal('modal9')">
+        <img src="image/Brands/Ido/gilet1.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal9')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/gilet1.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">12M</option>
+            <option value="4Y">18M</option>
+          </select>
+        </div>
+      </div>
+
+      
+
+      <div class="product" data-category="Jacket" data-brand="Sarabanda" onclick="openModal('modal16')"> 
+        <img src="image/Brands/Sarabanda/jacket3.jpg" alt="Sarabanda Jacket" />
+        <h3>Sarabanda</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal16" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal16')">&times;</span>
+          <img class="modal-img" src="image/Brands/Sarabanda/jacket3.jpg" alt="Sarabanda jacket" />
+          <h3 class="modal-title">Sarabanda</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">S</option>
+            <option value="6Y">M</option>
+            <option value="4Y">L</option>
+            <option value="6Y">XL</option>
+            <option value="4Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido" onclick="openModal('modal10')">
+        <img src="image/Brands/Ido/gilet3.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal10" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal10')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/gilet3.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">S</option>
+            <option value="6Y">M</option>
+            <option value="4Y">L</option>
+            <option value="6Y">XL</option>
+            <option value="6Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido">
+        <img src="image/Brands/Ido/jacket2.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal11" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal11')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/jacket2.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">S</option>
+            <option value="6Y">M</option>
+            <option value="4Y">XL</option>
+            <option value="6Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Absorba" onclick="openModal('modal39')">
+          <img src="image/Brands/Absorba/jacket2.jpg" alt="Absorba jacket" />
+          <h3>Absorba</h3>
+          <p>Jacket</p>
+          <p>$83</p>
+      </div>
+      <div id="modal39" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal39')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/jacket2.jpg" alt="Absorba jacket" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$83</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">6M</option>
+            <option value="6Y">12M</option>
+            <option value="4Y">24M</option>
+            <option value="4Y">36M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ducati" onclick="openModal('modal3')">
+        <img src="image/Brands/Dugati/Jacket3.jpg" alt="Ducati Jacket" />
+        <h3>Ducati</h3>
+        <p>Jacket</p>
+        <p>$9.99</p>
+      </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <img class="modal-img" src="image/Brands/Dugati/jacket3.jpg" alt="Ducati jacket" />
+          <h3 class="modal-title">Ducati</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">S</option>
+            <option value="6Y">M</option>
+            <option value="6Y">L</option>
+            <option value="6Y">XL</option>
+            <option value="6Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido" onclick="openModal('modal12')">
+        <img src="image/Brands/Ido/gilet6.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal12" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal12')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/gilet6.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">24M</option>
+            <option value="4Y">5Y</option>
+            <option value="4Y">6Y</option>
+            <option value="4Y">7Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido" onclick="openModal('modal13')">
+        <img src="image/Brands/Ido/gilet5.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal13" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal13')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/gilet5.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal24')">
+          <img src="image/Brands/Ikks/Ikks/jacket8.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$95</p>
+      </div>
+      <div id="modal24" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal24')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket8.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$95</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">10Y</option>
+            <option value="6Y">12Y</option>
+            <option value="6Y">14Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="Jacket" data-brand="Ido" onclick="openModal('modal14')">
+        <img src="image/Brands/Ido/jacket3.jpg" alt="Ido Jacket" />
+        <h3>Ido</h3>
+        <p>Jacket</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal14" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal14')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/jacket3.jpg" alt="Ido jacket" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">S</option>
+            <option value="6Y">M</option>
+            <option value="4Y">XL</option>
+            <option value="6Y">XXL</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal25')">
+          <img src="image/Brands/Ikks/Ikks/jacket9.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$90-$95</p>
+      </div>
+      <div id="modal25" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal25')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket9.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$90-$95</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">6Y</option>
+            <option value="6Y">8Y</option>
+            <option value="6Y">10Y</option>
+            <option value="6Y">12Y</option>
+            <option value="6Y">14Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal27')">
+          <img src="image/Brands/Ikks/Ikks/jacket11.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$65</p>
+      </div>
+      <div id="modal27" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal27')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket11.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$65</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">2Y</option>
+            <option value="6Y">3Y</option>
+            <option value="6Y">4Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal28')">
+          <img src="image/Brands/Ikks/Ikks/jacket12.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$208</p>
+      </div>
+      <div id="modal28" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal28')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket12.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$208</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">10Y</option>
+            <option value="6Y">12Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal30')">
+          <img src="image/Brands/Ikks/Ikks/jacket14.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$84-$90</p>
+      </div>
+      <div id="modal30" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal30')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket14.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$84-$90</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">6Y</option>
+            <option value="6Y">8Y</option>
+            <option value="6Y">10Y</option>
+            <option value="6Y">12Y</option>
+            <option value="6Y">14Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal33')">
+          <img src="image/Brands/Ikks/Ikks/jacket17.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$119-$134</p>
+      </div>
+      <div id="modal33" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal33')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket17.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$119-$134</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">6Y</option>
+            <option value="6Y">8Y</option>
+            <option value="6Y">10Y</option>
+            <option value="6Y">12Y</option>
+            <option value="6Y">14Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal35')">
+          <img src="image/Brands/Ikks/Ikks/jacket19.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$154-$164</p>
+      </div>
+      <div id="modal35" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal35')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket19.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$154-$164</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">5Y</option>
+            <option value="6Y">6Y</option>
+            <option value="6Y">6Y</option>
+            <option value="6Y">8Y</option>
+            <option value="6Y">10Y</option>
+            <option value="6Y">12Y</option>
+            <option value="6Y">14Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal36')">
+          <img src="image/Brands/Ikks/Ikks/jacket21.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$199</p>
+      </div>
+      <div id="modal36" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal36')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket21.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">12Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Ikks" onclick="openModal('modal37')">
+          <img src="image/Brands/Ikks/Ikks/jacket22.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$99</p>
+      </div>
+      <div id="modal37" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal37')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket22.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">18M</option>
+            <option value="6Y">2Y</option>
+            <option value="6Y">3Y</option>
+            <option value="6Y">4Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Absorba" onclick="openModal('modal38')">
+          <img src="image/Brands/Absorba/jacket1.jpg" alt="Absorba jacket" />
+          <h3>Absorba</h3>
+          <p>Jacket</p>
+          <p>$199.99</p>
+      </div>
+      <div id="modal38" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal38')">&times;</span>
+          <img class="modal-img" src="image/Brands/Absorba/jacket1.jpg" alt="Absorba jacket" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="jacket" data-brand="Absorba" onclick="openModal('modal40')">
+          <img src="image/Brands/Ikks/Ikks/jacket23.jpg" alt="Ikks jacket" />
+          <h3>Ikks</h3>
+          <p>Jacket</p>
+          <p>$134-$144</p>
+      </div>
+      <div id="modal40" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal40')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ikks/Ikks/jacket23.jpg" alt="Ikks jacket" />
+          <h3 class="modal-title">Ikks</h3>
+          <p class="modal-text">Jacket</p>
+          <p class="modal-price">$134-$144</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">4Y</option>
+            <option value="6Y">6Y</option>
+            <option value="6Y">8Y</option>
+            <option value="6Y">12Y</option>
+            <option value="6Y">14Y</option>
+          </select>
+        </div>
+      </div>
+      <!-- Repeat .product div for each product -->
+    </div>
+
+    <footer>
+      <a href="https://www.facebook.com/people/Boutique-Samir/100062805141412/" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://wa.me/message/2CJRMXW4RN47K1" class="fa fa-whatsapp" target="_blank"></a>
+      <a href="https://www.instagram.com/boutiquesamir/" class="fa fa-instagram" target="_blank"></a><br />
+      Copyright &copy; 2023 Boutique Samir
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+    <div id="loadingScreen" class="loading-screen">
+      <div class="loader">
+      <div class="justify-content-center jimu-primary-loading"></div>
+    </div>
+    </div>
+    <script type="text/javascript">
+window.onload = function() {
+  document.getElementById("loadingScreen").style.display = "none";
+};
+</script>
+  </body>
+</html>

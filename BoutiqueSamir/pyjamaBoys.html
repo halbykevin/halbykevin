@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Boutique Samir</title>
+  </head>
+  <body>
+    <p class="delevery-text">
+      HOME DELEVERY EXCHANGE SERVICE IS AVAILABLE<br />
+      CONTACT US ON 81 124154
+    </p>
+    <header>
+      <img src="image/logo/samirR-1.png" class="header-logo" />
+    </header>
+
+    <nav>
+      <span onclick="openNav()" class="open-sidenav-btn">☰</span>
+      
+    <a href="index.html">Home</a>
+    <a href="kids.html">Kids</a>
+    <a href="outlet.html" class="outlet-button">Outlet</a>
+    </nav>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+      <a href="index.html">Home</a>
+      <a href="new.html">New</a>
+      <a href="kids.html">Outlet</a>
+
+      <a href="boys.html"
+        >Boys<span
+          class="dropdown-icon"
+          onclick="toggleDropdown('boysDropdown', event)"
+        >
+          >
+        </span></a
+      >
+      <div id="boysDropdown" class="dropdown-content">
+        <a href="t-shirtBoys.html">T-shirt</a>
+        <a href="pantsBoys.html">Pants</a>
+        <a href="jacketsBoys.html">Jackets</a>
+        <a href="longSleeveBoys.html">Long Sleeve</a>
+        <a href="hoodiesBoys.html">Hoodies</a>
+        <a href="bodysBoys.html">Body</a>
+        <a href="shortsBoys.html">Shorts</a>
+        <a href="bootsBoys.html">Boots</a>
+        <a href="pyjamaBoys.html">Pyjama</a>
+        <a href="setsBoys.html">Sets</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <a href="girls.html"
+        >Girls<span
+          class="dropdown-icon"
+          onclick="toggleDropdown('girlsDropdown', event)"
+        >
+          >
+        </span></a
+      >
+      <div id="girlsDropdown" class="dropdown-content">
+        <a href="t-shirtGirls.html">T-shirt</a>
+        <a href="pantsGirls.html">Pants</a>
+        <a href="jacketsGirls.html">Jackets</a>
+        <a href="longSleeveGirls.html">Long Sleeve</a>
+        <a href="hoodiesGirls.html">Hoodies</a>
+        <a href="bodysGirls.html">Body</a>
+        <a href="dress.html">Dress</a>
+        <a href="shortsGirls.html">Shorts</a>
+        <a href="bootsGirls.html">Boots</a>
+        <a href="pyjamaGirls.html">Pyjama</a>
+        <a href="setsGirls.html">Sets</a>
+        <a href="accessories.html">Accessories</a>
+      </div>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="search-container">
+      <input
+        type="text"
+        placeholder="Search for a product or content..."
+        class="search-bar"
+      />
+      <button type="submit" class="search-btn">Search</button>
+      <div class="search-container"></div>
+    </div>
+
+    <div class="products">
+      <div class="product" data-category="pyjama" data-brand="Ido" onclick="openModal('modal1')">
+        <img src="image/Brands/Ido/pyjama2.jpg" alt="Ido Pyjama" />
+        <h3>Ido</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal1')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/pyjama2.jpg" alt="Ido pyjama" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">12M</option>
+            <option value="4Y">18M</option>
+            <option value="6Y">24M</option>
+            <option value="4Y">3Y</option>
+            <option value="4Y">4Y</option>
+            <option value="4Y">5Y</option>
+            <option value="4Y">6Y</option>
+            <option value="4Y">8Y</option>
+            <option value="6Y">10Y</option>
+            <option value="6Y">12Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Ido" onclick="openModal('modal2')">
+        <img src="image/Brands/Ido/pyjama3.jpg" alt="Ido Pyjama" />
+        <h3>Ido</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal2" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal2')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/pyjama3.jpg" alt="Ido pyjama" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">12M</option>
+            <option value="6Y">18M</option>
+            <option value="4Y">24M</option>
+            <option value="6Y">3Y</option>
+            <option value="6Y">4Y</option>
+            <option value="4Y">5Y</option>
+            <option value="4Y">6Y</option>
+            <option value="4Y">8Y</option>
+            <option value="4Y">10Y</option>
+            <option value="4Y">12Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Ido" onclick="openModal('modal3')">
+        <img src="image/Brands/Ido/pyjama4.jpg" alt="Ido Pyjama" />
+        <h3>Ido</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal3')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/pyjama4.jpg" alt="Ido pyjama" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">12M</option>
+            <option value="4Y">18M</option>
+            <option value="6Y">24M</option>
+            <option value="4Y">3Y</option>
+            <option value="4Y">4Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Ido" onclick="openModal('modal4')">
+        <img src="image/Brands/Ido/pyjama7.jpg" alt="Ido Pyjama" />
+        <h3>Ido</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal4" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal4')">&times;</span>
+          <img class="modal-img" src="image/Brands/Ido/pyjama7.jpg" alt="Ido pyjama" />
+          <h3 class="modal-title">Ido</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">3M</option>
+            <option value="6Y">6M</option>
+            <option value="4Y">9M</option>
+            <option value="6Y">12M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal5')">
+        <img src="image/Brands/absorba/pyjama2.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal5')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama2.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal17')">
+        <img src="image/Brands/absorba/pyjama4.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$22</p>
+      </div>
+      <div id="modal17" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal17')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama4.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$22</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">3</option>
+            <option value="6Y">9M</option>
+            <option value="4Y">9M</option>
+            <option value="6Y">12M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal6')">
+        <img src="image/Brands/absorba/pyjama6.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal6')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama6.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal7')">
+        <img src="image/Brands/absorba/pyjama7.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$39</p>
+      </div>
+      <div id="modal7" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal7')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama7.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$39</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">9M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal8')">
+        <img src="image/Brands/absorba/pyjama8.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$28</p>
+      </div>
+      <div id="modal8" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal8')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama8.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$28</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">6M</option>
+            <option value="6Y">9M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal9')">
+        <img src="image/Brands/absorba/pyjama9.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal9" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal9')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama9.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal10')">
+        <img src="image/Brands/absorba/pyjama10.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$43</p>
+      </div>
+      <div id="modal10" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal10')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama8.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$43</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">6M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal11')">
+        <img src="image/Brands/absorba/pyjama11.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$33</p>
+      </div>
+      <div id="modal11" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal11')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama11.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$33</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">1M</option>
+            <option value="6Y">12M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal12')">
+        <img src="image/Brands/absorba/pyjama12.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal12" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal12')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama12.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal13')">
+        <img src="image/Brands/absorba/pyjama13.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal13" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal13')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama13.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal14')">
+        <img src="image/Brands/absorba/pyjama14.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal14" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal14')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama14.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal15')">
+        <img src="image/Brands/absorba/pyjama15.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$39</p>
+      </div>
+      <div id="modal15" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal15')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama15.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$39</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">12M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal16')">
+        <img src="image/Brands/absorba/pyjama16.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$50</p>
+      </div>
+      <div id="modal16" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal16')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama16.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$50</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">3M</option>
+            <option value="6Y">6M</option>
+            <option value="6Y">12M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal18')">
+        <img src="image/Brands/absorba/pyjama18.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$32</p>
+      </div>
+      <div id="modal18" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal18')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama18.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$32</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">6M</option>
+            <option value="6Y">12M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal19')">
+        <img src="image/Brands/absorba/pyjama19.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal19" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal19')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama19.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal20')">
+        <img src="image/Brands/absorba/pyjama20.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$32</p>
+      </div>
+      <div id="modal20" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal20')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama20.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$32</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="6Y">12M</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal21')">
+        <img src="image/Brands/absorba/pyjama21.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal21" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal21')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama21.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal22')">
+        <img src="image/Brands/absorba/pyjama22.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$199.99</p>
+      </div>
+      <div id="modal22" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal22')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama22.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$199.99</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">4Y</option>
+            <option value="6Y">6Y</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="product" data-category="pyjama" data-brand="Absorba" onclick="openModal('modal23')">
+        <img src="image/Brands/absorba/pyjama23.jpg" alt="Absorba Pyjama" />
+        <h3>Absorba</h3>
+        <p>pyjama</p>
+        <p>$43</p>
+      </div>
+      <div id="modal23" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('modal23')">&times;</span>
+          <img class="modal-img" src="image/Brands/absorba/pyjama23.jpg" alt="Absorba pyjama" />
+          <h3 class="modal-title">Absorba</h3>
+          <p class="modal-text">Pyjama</p>
+          <p class="modal-price">$43</p>
+          <select class="modal-size">
+            <option value="Size">Size</option>
+            <option value="4Y">3M</option>
+            <option value="6Y">12M</option>
+          </select>
+        </div>
+      </div>
+      <!-- Repeat .product div for each product -->
+    </div>
+
+    <footer>
+      <a href="https://www.facebook.com/people/Boutique-Samir/100062805141412/" class="fa fa-facebook" target="_blank"></a>
+      <a href="https://wa.me/message/2CJRMXW4RN47K1" class="fa fa-whatsapp" target="_blank"></a>
+      <a href="https://www.instagram.com/boutiquesamir/" class="fa fa-instagram" target="_blank"></a><br />
+      Copyright &copy; 2023 Boutique Samir
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+    <div id="loadingScreen" class="loading-screen">
+      <div class="loader">
+      <div class="justify-content-center jimu-primary-loading"></div>
+    </div>
+    </div>
+    <script type="text/javascript">
+window.onload = function() {
+  document.getElementById("loadingScreen").style.display = "none";
+};
+</script>
+  </body>
+</html>
