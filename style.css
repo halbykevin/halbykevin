@@ -172,6 +172,8 @@ footer {
 .product[data-category="Socks"] p:nth-of-type(1),
 .product[data-category="Dress"] p:nth-of-type(1),
 .product[data-category="dress"] p:nth-of-type(1),
+.product[data-category="Hoodie"] p:nth-of-type(1),
+.product[data-category="hoodie"] p:nth-of-type(1),
 .product[data-category="Bavette"] p:nth-of-type(1),
 .product[data-category="bavette"] p:nth-of-type(1),
 .product[data-category="socks"] p:nth-of-type(1) {

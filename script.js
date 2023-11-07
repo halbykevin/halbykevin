@@ -137,4 +137,3 @@ document.addEventListener("click", function (event) {
     closeAllDropdowns();
   }
 });
-
