@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Boutique Samir</title>
   </head>
@@ -18,10 +21,10 @@
 
     <nav>
       <span onclick="openNav()" class="open-sidenav-btn">☰</span>
-      
-    <a href="index.html">Home</a>
-    <a href="kids.html">Kids</a>
-    <a href="outlet.html" class="outlet-button">Outlet</a>
+
+      <a href="index.html">Home</a>
+      <a href="kids.html">Kids</a>
+      <a href="outlet.html" class="outlet-button">Outlet</a>
     </nav>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
@@ -88,20 +91,39 @@
     </div>
     <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
+    <div class="products">
+      <!-- Repeat .product div for each product -->
+    </div>
+
     <footer>
-      <a href="https://www.facebook.com/people/Boutique-Samir/100062805141412/" class="fa fa-facebook" target="_blank"></a>
-      <a href="https://wa.me/message/2CJRMXW4RN47K1" class="fa fa-whatsapp" target="_blank"></a>
-      <a href="https://www.instagram.com/boutiquesamir/" class="fa fa-instagram" target="_blank"></a><br />
+      <a
+        href="https://www.facebook.com/people/Boutique-Samir/100062805141412/"
+        class="fa fa-facebook"
+        target="_blank"
+      ></a>
+      <a
+        href="https://wa.me/message/2CJRMXW4RN47K1"
+        class="fa fa-whatsapp"
+        target="_blank"
+      ></a>
+      <a
+        href="https://www.instagram.com/boutiquesamir/"
+        class="fa fa-instagram"
+        target="_blank"
+      ></a
+      ><br />
       Copyright &copy; 2023 Boutique Samir
     </footer>
+    <script type="text/javascript" src="script.js"></script>
     <div id="loadingScreen" class="loading-screen">
       <div class="loader">
-      <div class="justify-content-center jimu-primary-loading"></div>
-    </div>
+        <div class="justify-content-center jimu-primary-loading"></div>
+      </div>
     </div>
     <script type="text/javascript">
-window.onload = function() {
-  document.getElementById("loadingScreen").style.display = "none";
-};
-</script>
-    
+      window.onload = function () {
+        document.getElementById("loadingScreen").style.display = "none";
+      };
+    </script>
+  </body>
+</html>
